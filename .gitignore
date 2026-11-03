@@ -1,0 +1,26 @@
+# .NET build and publish output
+**/bin/
+**/obj/
+artifacts/
+publish/
+dist/
+TestResults/
+*.nupkg
+*.snupkg
+
+# Local editor and operating system files
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local credentials, logs, and generated archives
+.env
+.env.*
+*.log
+*.zip
+*.rar
