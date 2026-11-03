@@ -29,7 +29,17 @@ Dispatch.json → PluginAdi → css_dispatch → ZIP → Filebin → konsolda in
 - Sunucudan `https://filebin.net` adresine HTTPS erişimi.
 - Kaynaktan derlemek için .NET 8 hedefini derleyebilen bir .NET SDK ve NuGet erişimi.
 
-## Derleme
+## Hazır paket (derleme gerektirmez)
+
+1. [GitHub Releases](https://github.com/TheDarkGuardian/Dispatch/releases/latest) sayfasındaki **`Dispatch-v1.0.0.zip`** dosyasını indirin. GitHub'ın otomatik oluşturduğu `Source code` arşivleri derlenmiş eklentiyi içermez.
+2. ZIP içindeki `addons/` klasörünü sunucunuzun `game/csgo/` klasörüne kopyalayın. Mevcut bir `Dispatch.json` dosyanız varsa kendi ayarlarınızı koruyun; paket içindeki örnek config ile üzerine yazmayın.
+3. `addons/counterstrikesharp/configs/plugins/Dispatch/Dispatch.json` içindeki `PluginAdi` alanına hedef klasör adını yazın.
+4. Sunucu konsolunda `css_plugins load Dispatch` çalıştırın. Dispatch zaten yüklüyse `css_plugins reload Dispatch` kullanın.
+5. `css_dispatch` komutuyla arşiv oluşturup indirme bağlantısını alın.
+
+Paket; derlenmiş eklentiyi, örnek yapılandırmayı, bu rehberi ve MIT lisansını içerir. Kurulum için .NET SDK gerekmez; sunucuda uyumlu CounterStrikeSharp çalışma ortamı bulunmalıdır.
+
+## Kaynaktan derleme
 
 Depoyu klonladıktan sonra proje klasöründe çalıştırın:
 
